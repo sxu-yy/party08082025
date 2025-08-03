@@ -7,7 +7,9 @@
   fclose($fh);
 
   $fh = fopen($fname, 'r');
-  $contents = fread($fh, filesize($fname));
+  while (($contents = fgets($fh, 4096)) !== false) {
+    echo $contents;
+    echo "<br>";
+  }
   fclose($fh);
-  echo $contents;
 ?>
