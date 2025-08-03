@@ -1,5 +1,5 @@
 <?php
-  $mail = $_POST['tosend'];
+  $mail = htmlspecialchars($_POST['tosend']);
   $fname = "mailbox.txt";
   $fh = fopen($fname, 'a') or die("Can't open file");
   fwrite($fh, $mail);
