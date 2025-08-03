@@ -4,17 +4,18 @@
   body {
     background: url("balloons-transp.png") repeat;
     background-size: 200px;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.4);
     background-blend-mode: multiply;
-  }
-  .outerbox {
-    width: 100%;
   }
   .box {
     width: 60%;
+    margin: auto;
+  }
+  .lbox {
+    width: 60%;
   }
   .text-box {
-    width: 33%;
+    width: 30%;
     float: left;
   }
 </style>
@@ -31,7 +32,7 @@
 <br>
 <hr>
 
-<div class="outerbox">
+<div class="box">
   <div class="text-box">
     <p><b>Outside:</b></p>
     <ul>
@@ -49,16 +50,10 @@
           <li><i>Chungking Express</i> (1994)</li>
         </ul>
       </li>
-      <li>Creative time w/ some materials & prompts</li> 
+      <li>Art time w/ some materials & prompts</li> 
       <li>Mixed drinks</li>
       <li>Yapping</li>
     </ul>
-  </div>
-  <div class="text-box"> 
-    <p> </p>
-    <br>
-    <br>
-    <br>
   </div>
 </div>
 
@@ -74,7 +69,7 @@
 <p>Nope!</p>
 <br>
 <p><b>Should I bring anything?</b></p>
-<div class="box">
+<div class="lbox">
   <ul>
     <li>Your presence is my present</li>
     <li>I'll provide a decent amount of food and beverage; more of either would certainly not be turned away</li>
@@ -83,7 +78,7 @@
 </div>
 <br>
 <p><b>Wdym "first"?</b></p>
-<div class="box">
+<div class="lbox">
   <p>My family has chosen this time each year to go on vacation or go back to China, for many years. It's really sweet to always celebrate with them, but I'm excited to get to share this one with my chosen community :))</p>
 </div>
 
@@ -91,9 +86,9 @@
 <hr>
 
 <h2 style="font-family:courier">RSVP with your name/comments/concerns??</h2>
-<br>c
 <form action="mailbox.php" method="post">
-  <input type="text" id="tosend" name="tosend"><br>
+  <input type="text" id="tosend" name="tosend">
+  <br><br>
   <input type="submit" value="SENDIT">
 </form> 
 
